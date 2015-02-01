@@ -20,9 +20,8 @@ if __name__ == '__main__':
       print(bike['bike'].name)
     print ""
     
-  print bikeshop.name + " Inventory:"
-  for item in bikeshop.inventory:
-    print item['bike'].name + "     number: " + str(item['number'])
+  bikeshop.printInventory()
+  print ""
     
   for customer in customers:
     customer.buyBike(bikeshop)
